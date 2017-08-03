@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Friend Finder Survey</title>
+	  		<!-- Boostrap -->
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+  	</head>
+  	<body>
+            <div class="container-fluid">
+                <div class="row">
+                <h1>Survey Questions</h1>
+                    <hr>
+                        <!-- Creating a form and sending all the data entered to friends.js -->
+                      <form action=" ../app/data/friends.js">
+                        <h3>Username:(Required)</h3>
+                        <input type="text" name="name" required id="in1">
+                        <h3>Link to Photo image:(Required)</h3>
+                        <input type="text" name="link" required id="in2">                        
+                    <hr>
+                        <h3>Question 1</h3>
+                        <h4>Do you always have a lot of energy?</h4>
+                    <select id= "q1">
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select>
+                        <h3>Question 2</h3>
+                        <h4>Do you like to have a lot of people around you?</h4>                    
+                    <select id= "q2">
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select>
+                        <h3>Question 3</h3>
+                        <h4>Do you like to look for new things to do?</h4>                  
+                    <select id= "q3">
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select>
+                        <h3>Question 4</h3>
+                        <h4>Do you like to learn?</h4>                   
+                    <select id= "q4">
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select>
+                        <h3>Question 5</h3>
+                        <h4>Do you like to go on long rides?</h4>                    
+                    <select id= "q5">
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select>
+                        <h3>Question 6</h3>
+                        <h4>Do you like lots of noise?</h4>
+                    <select id= "q6">
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select>
+                        <h3>Question 7</h3>
+                        <h4>Do you like steak?</h4>                    
+                    <select id= "q7">
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select>
+                        <h3>Question 8</h3>
+                        <h4>Do you like fish?</h4>                  
+                    <select id= "q8">
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select>
+                        <h3>Question 9</h3>
+                        <h4>Do you like salads?</h4>                   
+                    <select id= "q9">
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select>
+                        <h3>Question 10</h3>
+                        <h4>Do you like large open areas?</h4>                    
+                    <select id= "q10"> 
+                        <option selected="selected" disabled="disabled">Select your Choice</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>                      
+                        <option value="2">2</option>  
+                        <option value="1">1 (Strongly Disagree)</option>                         
+                    </select> 
+                          <br>
+                          <br>
+                          <p><a class="btn btn-primary btn-lg btn-block" href="#" role="button" id="search" data-toggle="modal" data-target="#submit"><span class="glyphicon glyphicon-ok"></span> Submit</a></p>
+                    </form>
+                          
+                </div>                   
+        </div>
+                    <a href="../app/data/friends.js" class="btn btn-link" role="button">API Friends List</a> |
+                    <a href="https://github.com/BenJHill78/FriendFinder" class="btn btn-link" role="button">GitHub</a>
+        
+        	<div class="modal fade" id="submit" role="dialog">
+		<div class="modal-dialog" data-dismiss="modal">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Your Friend Match.</h4>
+				</div>
+				<div class="modal-body">
+					<hr>
+					<img src="https://www.google.com/search?q=ferret+pics&tbm=isch&imgil=OmoDMIgHlEwkEM%253A%253Bm3CUZYBSJ1KpFM%253Bhttp%25253A%25252F%25252Fanimalsbirds.com%25252Fbeautiful-animals-ferret-photos-collection%25252F&source=iu&pf=m&fir=OmoDMIgHlEwkEM%253A%252Cm3CUZYBSJ1KpFM%252C_&usg=__AgDZJRkV4yWCXgNTjeC3XcdlFUI%3D&biw=1536&bih=725&dpr=1.25"​ class="imagepreview">
+					</div>
+					<div class="modal-body">
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+       
+         		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+ 
+        <script type="text/javascript">
+        
+            $("#submit").on("click", function(){
+                var sur = [];
+                for (var i = 0; i < 10; i++){ 
+                    sur.push($("#q" + (i+1)).val());
+                }
+                var newFriend = {
+                    name: $("#in1").val().trim(),
+                    pics: $("#in2").val().trim(),
+                    score: sur
+                }
+                console.log(newFriend);
+                console.log("On click is running.")
+                $.post("api/new", newFriend)
+                .done(function(data){
+                   console.log("posted data: " +data);
+                })
+            })
+
+        </script>
+  	</body>
+    </html>
+
