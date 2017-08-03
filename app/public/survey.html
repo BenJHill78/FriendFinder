@@ -141,8 +141,7 @@
 					<h4 class="modal-title">Your Friend Match.</h4>
 				</div>
 				<div class="modal-body">
-					<hr>
-					<img src="https://www.google.com/search?q=ferret+pics&tbm=isch&imgil=OmoDMIgHlEwkEM%253A%253Bm3CUZYBSJ1KpFM%253Bhttp%25253A%25252F%25252Fanimalsbirds.com%25252Fbeautiful-animals-ferret-photos-collection%25252F&source=iu&pf=m&fir=OmoDMIgHlEwkEM%253A%252Cm3CUZYBSJ1KpFM%252C_&usg=__AgDZJRkV4yWCXgNTjeC3XcdlFUI%3D&biw=1536&bih=725&dpr=1.25"​ class="imagepreview">
+                    <div id= friend></div>
 					</div>
 					<div class="modal-body">
 						<div class="modal-footer">
@@ -155,25 +154,9 @@
        
          		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
  
-        <script type="text/javascript">
+        <script type="text/javascript" src="assets/friends.js">
         
-            $("#submit").on("click", function(){
-                var sur = [];
-                for (var i = 0; i < 10; i++){ 
-                    sur.push($("#q" + (i+1)).val());
-                }
-                var newFriend = {
-                    name: $("#in1").val().trim(),
-                    pics: $("#in2").val().trim(),
-                    score: sur
-                }
-                console.log(newFriend);
-                console.log("On click is running.")
-                $.post("api/new", newFriend)
-                .done(function(data){
-                   console.log("posted data: " +data);
-                })
-            })
+
 
         </script>
   	</body>
